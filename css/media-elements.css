@@ -1,0 +1,303 @@
+
+      /* Элементы 1-й Секции */
+      @media (max-width: 1190px) {
+        .block-element__up_lattice-position-animation {
+          top: 355px;
+        }
+
+        .block-element__up_div-up-position-animation {
+          top: 20px;
+          left: 1380px;
+        }
+      }
+
+      @media (max-width: 1070px){
+       .block-element__up_bracket-position-animation {
+         z-index: 1;
+         transform: rotate(28deg) scale(1.6);
+         top: 62px;
+         left: 86px;
+         animation: none;
+       }
+
+       .block-element__up_lattice-position-animation {
+        z-index: 1;
+        transform: rotate(15deg) scale(1.8);
+        top: 542px;
+        left: 68px;
+        animation: none;
+
+      }
+
+      .block-element__up_fraction-position-animation {
+        z-index: 1;
+        transform: rotate(-19deg) scale(1.4);
+        top: 488px;
+        left: 368px;
+        animation: none;
+
+      }
+
+      .block-element__up_div-down-position-animation {
+        z-index: 1;
+        transform: rotate(16deg) scale(1.2);
+        top: 140px;
+        left: 420px;
+        animation: none;
+
+      }
+
+      .block-element__up_div-up-position-animation {
+        z-index: 1;
+        /*  width: 90px;*/
+        top: 20px;
+        left: 880px;
+        animation: div-up 0s 0s;
+      }
+
+      @media (max-width: 970px) {
+        .block-element__up_div-up-position-animation {
+          display: none;
+        }
+      }
+
+    }
+
+
+    @media (max-width: 690px){
+     .block-element__up_bracket-position-animation {
+       top: 50px;
+       left: 90px;
+     }
+
+     .block-element__up_lattice-position-animation {
+      top: 450px;
+      left: 50px;
+    }
+
+    .block-element__up_fraction-position-animation {
+      top: 300px;
+      left: 480px;
+    }
+
+    .block-element__up_div-down-position-animation {
+      top: 50px;
+      left: 400px;
+    }
+
+  }
+
+
+
+  /*Элементы блока 320px*/
+
+  @media (max-width: 550px) {
+    .block-element__up_bracket-position-animation {
+      top: 20px;
+      left: 146px;
+      transform: scale(0.8) rotate(26deg) ;
+    }
+
+    .block-element__up_lattice-position-animation {
+      top: 127px;
+      left: 137px;
+      transform: scale(1) rotate(13deg);
+    }
+
+    .block-element__up_fraction-position-animation {
+      top: 0px;
+      left: 265px;
+      transform: scale(0.7) rotate(-27deg);
+    }
+
+    .block-element__up_div-down-position-animation {
+      top: 60px;
+      left: 329px;
+      transform: scale(0.5) rotate(19deg);
+    }
+  }
+
+    @media (max-width: 460px) {
+      .block-element__up_bracket-position-animation {
+      top: 20px;
+      left: 116px;
+      transform: scale(0.8) rotate(26deg) ;
+    }
+
+    .block-element__up_lattice-position-animation {
+      top: 127px;
+      left: 70px;
+      transform: scale(1) rotate(13deg);
+    }
+
+  }
+
+   @media (max-width: 380px) {
+    .block-element__up_bracket-position-animation {
+      top: 20px;
+      left: 46px;
+      transform: scale(0.8) rotate(26deg) ;
+    }
+
+    .block-element__up_lattice-position-animation {
+      top: 127px;
+      left: 37px;
+      transform: scale(1) rotate(13deg);
+    }
+
+    .block-element__up_fraction-position-animation {
+      top: 0px;
+      left: 165px;
+      transform: scale(0.7) rotate(-27deg);
+    }
+
+    .block-element__up_div-down-position-animation {
+      top: 60px;
+      left: 229px;
+      transform: scale(0.5) rotate(19deg);
+    }
+  }
+
+
+
+
+  /*Элементы 4-й секции */
+
+  @media(max-width: 1800px) {
+    .trade-elements__down_bracket-down-position-animation {
+      display: none;
+    }
+
+    .trade-elements__down_fraction-position-animation {
+      top: 1550px;
+      left: 1200px;
+
+    }
+
+    .trade-elements__down_div-position-animation {
+      top: 1790px;
+      left: 1120px;
+
+    }
+
+    .trade-elements__down_lattice-position-animation {
+      top: 1810px;
+    }
+
+  }
+
+  @media(max-width: 1270px) {
+
+    .trade-elements__down_lattice-position-animation {
+      display: none;
+    }
+
+    .trade-elements__down_fraction-position-animation {
+      top: 1790px;
+      left: 890px;
+      transform: scale(1) rotate(-25deg);
+    }
+
+    .trade-elements__down_div-position-animation {
+      top: 1800px;
+      left: 430px;
+      transform: scale(0.9) rotate(20deg);
+    }
+
+    .trade-elements__down_bracket-up-position-animation {
+      top: 1530px;
+      left: 225px;
+      transform: scale(1) rotate(25deg);
+    }
+
+  }
+
+
+
+  @media(max-width: 1175px) {
+    .trade-elements__down_fraction-position-animation {
+      top: 1750px;
+      left: 890px;
+    }
+
+    .trade-elements__down_div-position-animation {
+      top: 1780px;
+      left: 490px;
+    }
+
+    .trade-elements__down_bracket-up-position-animation {
+      top: 1520px;
+      left: 120px;
+   }
+  }
+
+
+
+  @media(max-width: 1024px) {
+     .trade-elements__down_fraction-position-animation {
+       top: 1950px;
+       left: 840px;
+    }
+
+    .trade-elements__down_div-position-animation {
+      top: 1980px;
+      left: 380px;
+    }
+
+    .trade-elements__down_bracket-up-position-animation {
+      top: 1710px;
+      left: 175px;
+   }
+  }
+
+
+
+  @media(max-width: 980px) {
+    .trade-elements__down_fraction-position-animation {
+       top: 1950px;
+       left: 700px;
+    }
+
+    .trade-elements__down_div-position-animation {
+      top: 2030px;
+      left: 330px;
+    }
+
+    .trade-elements__down_bracket-up-position-animation {
+      top: 1710px;
+      left: 150px;
+   }
+  }
+
+  @media(max-width: 850px) {
+    .trade-elements__down_fraction-position-animation {
+       top: 1990px;
+       left: 600px;
+    }
+
+    .trade-elements__down_div-position-animation {
+      top: 2080px;
+      left: 330px;
+    }
+
+    .trade-elements__down_bracket-up-position-animation {
+      top: 1760px;
+      left: 120px;
+   }
+  }
+
+
+
+  @media(max-width: 690px) {
+    .trade-elements__down_fraction-position-animation {
+      display: none;
+    }
+
+    .trade-elements__down_div-position-animation {
+      display: none;
+    }
+
+    .trade-elements__down_bracket-up-position-animation {
+     display: none;
+   }
+ }
