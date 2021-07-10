@@ -81,18 +81,25 @@ a {
     display: none;
   }
 
+  /*Мобильное меню*/
+
+  .mob_nav-menu {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+  }
+
   .nav-menu__item:not(:last-child) {
     margin-right: 30px;
     /*font-weight: 400;*/
   }
 
-  .nav-menu__list {
+ /* .nav-menu__list {
     list-style-type: none;
-		/*padding-inline-start: 0px;*/
 		padding: 14px 0 0 0;
     display: flex;
     flex-direction: row;
-  }
+  }*/
 
   .nav-menu {
 
