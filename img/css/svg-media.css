@@ -1,0 +1,78 @@
+@media (max-width: 1430px) {
+
+	img.main-information__img {
+		position: relative;
+		/*left: 100px;*/
+    object-fit: contain;
+  }
+
+
+  .main-information.ellipse {
+    position: relative;
+    background-position: 460px 65px;
+  }
+
+
+.main-information__photo-wrapper {
+  right: -320px;
+}
+
+}
+
+@media (max-width: 1024px) {
+  img.main-information__img {
+    top: -27px;
+    left: 105px;
+  }
+}
+
+@media (max-width: 690px) {
+
+	img.main-information__img {
+		margin-top: 50px;
+		height: auto;
+		position: relative;
+		top: 4px;
+    left: 150px;
+    max-width: 280px;
+    object-fit: contain;
+    grid-area: stonks;
+  }
+
+  section.main-information {
+    /*height: 487.5px;*/
+    height: auto;
+  }
+
+  .main-information__grid-container {
+    max-width: 280px;
+    grid-template-columns: 1fr;
+    grid-template-areas: "stonks"
+    "blok";
+  }
+
+
+
+  .main-information__block-header {
+    padding-top: 0px;
+    grid-area: blok;
+    max-width: 280px;
+    padding-bottom: 25px;
+  }
+
+
+  .main-information.ellipse {
+    position: relative;
+    background-position: -275px 105px;
+  }
+
+
+}
+
+@media (max-width: 450px) {
+  img.main-information__img {
+    max-height: 336px;
+    left: 210px;
+  }
+
+}
