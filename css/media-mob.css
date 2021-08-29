@@ -182,6 +182,12 @@
       margin: 0;
     }
 
+    /* Секция 3*/
+
+    .illustration__activity{
+      font-size: 30px;
+    }
+
     .illustration {
       margin-top: 50px;
     }

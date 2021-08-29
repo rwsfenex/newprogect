@@ -52,6 +52,36 @@
   .nav-menu__list{
     display: none;
   }
+    /*Мобильное меню*/
+   
+
+  .nav-menu__list.active {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    background-color: #ffffff;
+    border-radius: 10%;
+    border: 1px solid #fa0e93;
+    list-style-type: none;
+    z-index: 3;
+  }
+
+  .menu__item.active {
+    margin: 10px 0 0 5px;
+  }
+
+  .nav-menu.active a {
+    font-size: 18px;
+    color: #8993ad;
+  }
+
+  .menu__item:last-child.active {
+    padding: 0px 30px 10px 0;
+  }
+
 
   .hamburger {
     display: block;
@@ -101,26 +131,27 @@
 
 
 
-              .menu-btn_active {
+             .hamburger.active {
                 background-color: #ffffff;
               }
 
               /* псевдоклассы before и after в гамбургере после нажатия */
 
-              .menu-btn_active span,
-              .menu-btn_active span:before,
-              .menu-btn_active span:after {
+              .hamburger.active span,
+              .hamburger.active span:before,
+              .hamburger.active span:after {
                 background-color: #000000;
               }
 
-              .menu-btn_active span {
+              .hamburger.active span {
                 height: 0;
               }
-              .menu-btn_active span:before {
+              .hamburger.active span:before {
                 margin-top: 0px;
                 transform: rotate(45deg);
               }
-              .menu-btn_active span:after {
+              .hamburger.active span:after {
+                margin-top: 0px;
                 transform: rotate(-45deg);
               }
 

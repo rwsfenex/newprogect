@@ -169,19 +169,19 @@
     }
 
     .trade-elements__down_fraction-position-animation {
-      top: 1550px;
+      top: 2280px;/*1550*/
       left: 1200px;
 
     }
 
     .trade-elements__down_div-position-animation {
-      top: 1790px;
+      top: 2520px;/*1790*/
       left: 1120px;
 
     }
 
     .trade-elements__down_lattice-position-animation {
-      top: 1810px;
+      top: 2540px;/*1810*/
     }
 
   }
@@ -193,19 +193,19 @@
     }
 
     .trade-elements__down_fraction-position-animation {
-      top: 1790px;
+      top: 2540px;/*1790*/
       left: 890px;
       transform: scale(1) rotate(-25deg);
     }
 
     .trade-elements__down_div-position-animation {
-      top: 1800px;
+      top: 2530px;/*1800*/*
       left: 430px;
       transform: scale(0.9) rotate(20deg);
     }
 
     .trade-elements__down_bracket-up-position-animation {
-      top: 1530px;
+      top: 2280px;/*1530*/
       left: 225px;
       transform: scale(1) rotate(25deg);
     }
@@ -216,17 +216,17 @@
 
   @media(max-width: 1175px) {
     .trade-elements__down_fraction-position-animation {
-      top: 1750px;
+      top: 2500px;/*1750*/
       left: 890px;
     }
 
     .trade-elements__down_div-position-animation {
-      top: 1780px;
+      top: 2510px;/*1780*/
       left: 490px;
     }
 
     .trade-elements__down_bracket-up-position-animation {
-      top: 1520px;
+      top: 2260px;/*1520*/
       left: 120px;
    }
   }
@@ -235,17 +235,17 @@
 
   @media(max-width: 1024px) {
      .trade-elements__down_fraction-position-animation {
-       top: 1950px;
+       top: 2700px;/*1950*/
        left: 840px;
     }
 
     .trade-elements__down_div-position-animation {
-      top: 1980px;
+      top: 2700px;/*1980*/
       left: 380px;
     }
 
     .trade-elements__down_bracket-up-position-animation {
-      top: 1710px;
+      top: 2440px;/*1710*/
       left: 175px;
    }
   }
@@ -254,34 +254,34 @@
 
   @media(max-width: 980px) {
     .trade-elements__down_fraction-position-animation {
-       top: 1950px;
+       top: 2700px; /*1950*/
        left: 700px;
     }
 
     .trade-elements__down_div-position-animation {
-      top: 2030px;
+      top: 2750px; /*2030*/
       left: 330px;
     }
 
     .trade-elements__down_bracket-up-position-animation {
-      top: 1710px;
+      top: 2440px;/*1710*/
       left: 150px;
    }
   }
 
   @media(max-width: 850px) {
     .trade-elements__down_fraction-position-animation {
-       top: 1990px;
+       top: 27400px;/*1990*/
        left: 600px;
     }
 
     .trade-elements__down_div-position-animation {
-      top: 2080px;
+      top: 2800px;/*2080*/
       left: 330px;
     }
 
     .trade-elements__down_bracket-up-position-animation {
-      top: 1760px;
+      top: 2490px;/*1760*/
       left: 120px;
    }
   }
