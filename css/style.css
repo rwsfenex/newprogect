@@ -919,6 +919,7 @@ a.close_popup {
   opacity: 0;
   overflow-y: auto;
   overflow-x: hidden;
+
   
 }
 
@@ -943,7 +944,8 @@ a.close_popup {
 }
 
 .popup__content {
-  background: #ececec;
+  border: 1px solid #f82370;
+  background: /*#ececec;*/ #f8f8ff;
   padding: 60px 90px;
   border-radius: 15px;
   width: 500px;
@@ -964,3 +966,51 @@ a.close_popup {
   cursor: pointer;
   text-decoration: none;
 }
+
+.popup__head {
+  margin-bottom: 20px;
+}
+
+.popup__text {
+  margin-bottom: 20px;
+  color: #8993ad;
+}
+
+.your-name {
+  border: 1px solid #cecece;
+  background: #f6f6f6;
+  box-shadow: inset 0px 20px 20px #ffffff;
+  border-radius: 8px;
+  padding: 8px 14px;
+  width: 120px;
+}
+.your-number {
+  border: 1px solid #cecece;
+  background: #f6f6f6;
+  box-shadow: inset 0px 20px 20px #ffffff;
+  border-radius: 8px;
+  padding: 8px 14px;
+  width: 120px;
+}
+
+.forms {
+  cursor: pointer;
+  border: 1px solid #cecece;
+  background: #f6f6f6;
+  box-shadow: inset 0px 20px 20px #ffffff;
+  border-radius: 8px;
+  padding: 8px 14px;
+  width: 120px;
+}
+.forms:hover {
+  box-shadow: inset 0px -20px 20px #ffffff;
+}
+.forms:active {
+  margin-top: 1px;
+  margin-bottom: -1px;
+  zoom: 1;
+}
+.forms:focus
+{
+  outline:none;
+} 

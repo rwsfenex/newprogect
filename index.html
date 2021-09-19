@@ -20,6 +20,7 @@
   <script src="./js/call-me.js"></script> 
   <script src="./js/script.js"></script>
   <script src="./js/slider.js"></script>
+  <script src="./js/valids.js"></script>
 </head>
 <body>
 	<header class="header">
@@ -61,7 +62,7 @@
       <a href="#" class="button-text">Узнать больше</a>
     </div>
     <div class="main-information__photo-wrapper">
-      <img alt="фото исполнителя" class="main-information__img" src="./img/Stonks.png">
+      <img alt="фото исполнителя" class="main-information__img" src="./img/creator.png">
     </div>
   </div>
 </section>
@@ -92,7 +93,7 @@
 <img src="./img/sliders/03.jpg">
 </div>
  </div>
- <a href="#" class="illustration__button-text">Заказать проект</a>
+ <a href="#popup" class="illustration__button-text">Заказать проект</a>
 </div>
 </section>
 
@@ -170,17 +171,17 @@
   <div class="popup__body">
     <div class="popup__content">
       <a href="#" class="popup__close">X</a>
-      <h3>Заказать звонок</h3>
-      <p>Отправьте заявку и мы свяжемся с вами в ближайшее время</p>
+      <h3 class="popup__head">Заказать звонок</h3>
+      <p class="popup__text">Отправьте заявку и мы свяжемся с вами в ближайшее время</p>
       <form> 
       <!-- Hidden Required Fields -->
     <input type="hidden" name="project_name" value="Site Name">
      <input type="hidden" name="admin_email" value="burakov.s@internet.ru">
      <input type="hidden" name="form_subject" value="Form Subject"> 
     <!-- END Hidden Required Fields -->
-      <input type="text" name="name" placeholder="Ваше имя">
-      <input type="text" name="name" placeholder="Ваше телефон">
-      <input type="submit"  value="Отправить">
+      <input class="your-name" type="text"  name="name" placeholder="Ваше имя">
+      <input class="your-number" type="text"  name="name" placeholder="Ваше телефон">
+      <button class="forms" type="submit"  value="Отправить">Отправить</button>
     </form>
     </div>
   </div>

@@ -72,12 +72,12 @@
 
      .block-element__up_lattice-position-animation {
       top: 450px;
-      left: 50px;
+      left: 30px;/*50*/
     }
 
     .block-element__up_fraction-position-animation {
-      top: 300px;
-      left: 480px;
+      top: 230px;/*300*/
+      left: 640px;/*480*/
     }
 
     .block-element__up_div-down-position-animation {
