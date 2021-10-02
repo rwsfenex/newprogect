@@ -1,6 +1,6 @@
-const popupLinks = document.qerySelectorAll('.popup-link');
-const body = document.qerySelector('body');
-const lockPadding = document.qerySelectorAll(".lock-padding");
+const popupLinks = document.querySelectorAll('.popup-link');
+const body = document.querySelector('body');
+const lockPadding = document.querySelectorAll(".lock-padding");
 
 let unlock = true;
 
@@ -18,7 +18,7 @@ if (popupLinks.length > 0) {
    }
 }
 
-const popupCloseIcon = document.qerySelectorAll('.close-popup');
+const popupCloseIcon = document.querySelectorAll('.close-popup');
 if (popupCloseIcon.length > 0) {
 	for (let index = 0; index < popupCloseIcon.length; index++) {
 		const el = popupCloseIcon[index];
@@ -31,7 +31,7 @@ if (popupCloseIcon.length > 0) {
 
 function popupOpen(curentPopup) {
 	if (curentPopup && unlock) {
-		const popupActive = document.qerySelector('.popup.open');
+		const popupActive = document.querySelector('.popup.open');
 		if (popupActive) {
 			popupClose(popupActive, false);
 		} else {
@@ -55,7 +55,7 @@ function popupClose(popupActive, doUnlock = true) {
 }
 
 function bodyLock() {
-	const lockPaddingValue = window.innerWidth - document.qerySelector('.wrapper').offsetWidth + 'px';
+	const lockPaddingValue = window.innerWidth - document.querySelector('.wrapper').offsetWidth + 'px';
 
     if (lockPadding.length > 0) {
 	for (let index = 0; index < lockPadding.length; index++) {
@@ -90,7 +90,7 @@ function bodyUnLock() {
 
 document.addEventListener('keydown', function(e) {
 	if (e.which === 27) {
-		const popupActive = document.qerySelector('.popup.open');
+		const popupActive = document.querySelector('.popup.open');
 		popupClose(popupActive);
 	}
 });
