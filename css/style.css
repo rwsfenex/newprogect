@@ -1014,3 +1014,11 @@ a.close_popup {
 {
   outline:none;
 } 
+
+.well {
+  border-color: green;
+}
+
+.wrong {
+  background-color: red;
+}

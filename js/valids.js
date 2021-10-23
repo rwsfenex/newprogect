@@ -1,12 +1,34 @@
 $(function() {
 	$(".your-number").mask("8(999) 999-9999");
+
+	 if (re.test(e.target.value) ) {
+	 	name.classList.add("well")
+
+	 } else {
+	 	name.classList.add("wrong")
+
+	 }
+	 
   });
 
-function test (Text){
-    let re = /^([А-ЯA-Z]|[А-ЯA-Z][\x27а-яa-z]{1,}|[А-ЯA-Z][\x27а-яa-z]{1,}\-([А-ЯA-Z][\x27а-яa-z]{1,}|(оглы)|(кызы)))\040[А-ЯA-Z][\x27а-яa-z]{1,}(\040[А-ЯA-Z][\x27а-яa-z]{1,})?$/
-    
-}
+$(function() {
+const name = document.querySelector(".your-name")
 
+name.addEventListener("input", (e) => {
+
+	 const re = /^[a-zA-Я ,.'-]+$/i
+
+	 if (re.test(e.target.value) ) {
+	 	name.classList.add("well")
+	 	name.classList.remove("wrong")
+
+	 } else {
+	 	name.classList.remove("well")
+	 	name.classList.add("wrong")
+
+	 }
+ })
+});
 
 // let selector2 = document.querySelector('input[type="tel"]');
 
