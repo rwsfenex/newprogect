@@ -21,7 +21,7 @@
   <script src="./js/script.js"></script>
   <script src="./js/slider.js"></script>
   <!-- <script src="./js/inputmask.min.js"></script> -->
-  <!-- <script src="./js/just-validate.min.js"></script> -->
+  <script src="./js/just-validate.min.js"></script> 
   <script src="./js/jquery.maskedinput.min.js"></script>
   <script src="./js/valids.js"></script>
 </head>
@@ -62,7 +62,7 @@
      <div class="main-information__block-header">
       <h1 class="main-information__developer">Станислав Бураков</h1>
       <p class="main-information__text">Frontend-разработчик и веб-верстальщик</p>
-      <a href="#" class="button-text">Узнать больше</a>
+      <a href="#price-popup" class="button-text">Узнать больше</a>
     </div>
     <div class="main-information__photo-wrapper">
       <img alt="фото исполнителя" class="main-information__img" src="./img/creator.png">
@@ -79,7 +79,7 @@
  </ul>
  <!--<div class="grid-container-button"> -->
   <!-- <a href="#"  class="but-two">Узнать стоимость</a>-->
-  <a href="#"  class="button-text">Узнать стоимость</a>
+  <a href="#price-popup"  class="button-text">Узнать стоимость</a>
  <!--</div>-->
 </section>
 <section class="illustration">
@@ -185,6 +185,27 @@
     <!-- END Hidden Required Fields -->
       <input class="your-name" type="text"  name="name" placeholder="Ваше ФИО">
       <input class="your-number" type="tel" data-validate-fiald="tel"  name="name" placeholder="Ваш телефон">
+      <button class="forms" type="submit"  value="Отправить">Отправить</button>
+    </form>
+    </div>
+  </div>
+</div>
+<div id="price-popup" class="price-popup">
+  <div class="price-popup__body">
+    <div class="price-popup__content">
+      <a href="#" class="price-popup__close">X</a>
+      <h3 class="price-popup__head">Узнать больше</h3>
+      <p class="price-popup__text">Отправьте заявку и мы свяжемся с вами в ближайшее время</p>
+      <form action="mail.php" enctype="multipart/form-data" class="form" method="POST">
+      <input type="hidden" name="admin_email[]" value="burakov.s@internet.ru"> 
+      <!-- Hidden Required Fields -->
+    <input type="hidden" name="project_name" value="Site Name">
+     <input type="hidden" name="admin_email" value="burakov.s@internet.ru">
+     <input type="hidden" name="form_subject" value="Form Subject"> 
+    <!-- END Hidden Required Fields -->
+      <input class="your-name" type="text"  name="name" placeholder="Ваше ФИО">
+      <textarea class="your-text" rows="5"  placeholder="Ваш коментарий" maxlength="500" ></textarea>
+      <input class="your-email" type="email" data-validate-fiald="tel"  name="name" placeholder="Ваша почта">
       <button class="forms" type="submit"  value="Отправить">Отправить</button>
     </form>
     </div>
