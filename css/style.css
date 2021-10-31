@@ -590,9 +590,30 @@ a {
     height: 70px;
   }
 
-  ul.social-networks a:hover  {
-    color: #fc557c;
-    /*text-decoration: underline;*/
+ /* ховер для спрайтов*/
+  
+  a.social-networks__bg-vk:hover  {
+    background-image: url(../img/css-sprites__colors.png);
+    color:#fc557c*;
+    text-decoration: underline; 
+  }
+
+   a.social-networks__bg-fb:hover  {
+    background-image: url(../img/css-sprites__colors.png);
+    color:#fc557c*;
+    text-decoration: underline; 
+  }
+
+   a.social-networks__bg-tw:hover  {
+    background-image: url(../img/css-sprites__colors.png);
+    color:#fc557c*;
+    text-decoration: underline; 
+  }
+
+   a.social-networks__bg-inst:hover  {
+    background-image: url(../img/css-sprites__colors.png);
+    color:#fc557c*;
+    text-decoration: underline; 
   }
 
   .social-networks a {
