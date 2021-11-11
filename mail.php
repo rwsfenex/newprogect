@@ -38,7 +38,7 @@ $message = "<table style='width: 50%;'>$message</table>";
 
 
 // От кого
-$mail->setFrom('adm@' . $_SERVER['HTTP_HOST'], 'Your best site');
+$mail->setFrom('burakov.s@internet.ru' . $_SERVER['HTTP_HOST'], 'Your best site');
  
 // Кому
 foreach ( $admin_email as $key => $value ) {
@@ -49,7 +49,7 @@ $mail->Subject = $form_subject;
  
 // Тело письма
 $body = $message;
-// $mail->isHTML(true);  это если прям верстка
+ $mail->isHTML(true);  это если прям верстка
 $mail->msgHTML($body);
 
 // Приложения
@@ -60,3 +60,5 @@ if ($_FILES){
 }
 $mail->send();
 ?>
+
+
