@@ -61,7 +61,7 @@ name.addEventListener("input", (e) => {
  				}
  			}
 
-			xhr.open('POST', 'mail.php', true);
+			xhr.open('POST', 'send.php', true);
  			xhr.send(formData);
 
  			form.reset();
