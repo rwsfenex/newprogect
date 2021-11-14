@@ -1,6 +1,6 @@
 <?php
 
-if ( ! empty( $_POST["name"] ) && ! empty( $_POST["email"] ) && ! empty( $_POST["phone"] ) ) {
+if ( ! empty( $_POST["user_name"] ) && ! empty( $_POST["user_email"] ) && ! empty( $_POST["user_phone"] ) ) {
 	$email = $_POST['user_email'];
 	$name  = $_POST['user_name'];
 	$phone = $_POST['user_phone'];
