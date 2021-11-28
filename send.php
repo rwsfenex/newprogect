@@ -1,27 +1,40 @@
-<?php
+<?php 
 
-if ( ! empty( $_POST["user_name"] ) && ! empty( $_POST["user_email"] ) && ! empty( $_POST["user_phone"] ) ) {
-	$email = $_POST['user_email'];
-	$name  = $_POST['user_name'];
-	$phone = $_POST['user_phone'];
-	$mes = $_POST['mes'];
+require_once('phpmailer/PHPMailerAutoload.php');
+$mail = new PHPMailer;
+$mail->CharSet = 'utf-8';
 
+$name = $_POST['user_name'];
+$phone = $_POST['user_phone'];
+$email = $_POST['user_email'];
 
-	$to      = "burakov.s@internet.ru";
-	$subject = 'Посетитель оставил отзыв на сайте "Онлайн-курсы Международной академии менеджмента"';
+//$mail->SMTPDebug = 3;                               // Enable verbose debug output
 
-		$message = $name . "\r\n" . $email . "\r\n".$phone . "\r\n Отзыв: \r\n".$mes;
+$mail->isSMTP();                                      // Set mailer to use SMTP
+$mail->Host = 'smtp.mail.ru';  																							// Specify main and backup SMTP servers
+$mail->SMTPAuth = true;                               // Enable SMTP authentication
+$mail->Username = 'shikomaro94@mail.ru'; // Ваш логин от почты с которой будут отправляться письма
+$mail->Password = 'p1taRERio|Y2'; // Ваш пароль от почты с которой будут отправляться письма
+$mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
+$mail->Port = 465; // TCP port to connect to / этот порт может отличаться у других провайдеров
 
+$mail->setFrom('shikomaro94@mail.ru'); // от кого будет уходить письмо?
+$mail->addAddress('burakov.s@internet.ru');     // Кому будет уходить письмо 
+//$mail->addAddress('ellen@example.com');               // Name is optional
+//$mail->addReplyTo('info@example.com', 'Information');
+//$mail->addCC('cc@example.com');
+//$mail->addBCC('bcc@example.com');
+//$mail->addAttachment('/var/tmp/file.tar.gz');         // Add attachments
+//$mail->addAttachment('/tmp/image.jpg', 'new.jpg');    // Optional name
+$mail->isHTML(true);                                  // Set email format to HTML
 
+$mail->Subject = 'Заявка с тестового сайта';
+$mail->Body    = '' .$name . ' оставил заявку, его телефон ' .$phone. '<br>Почта этого пользователя: ' .$email;
+$mail->AltBody = '';
 
-	$headers = "From: user <info@mam-unex.ru>\r\n" .
-	           "MIME-Version: 1.0" . "\r\n" .
-	           "Content-type: text/html; charset=UTF-8" . "\r\n";
-
-	mail( $to, $subject, $message, implode( "\r\n", $headers ) ); //Отправка письма с помощью функции mail
-
+if(!$mail->send()) {
+    echo 'Error';
+} else {
+    header('location: thank-you.html');
 }
-
-
 ?>
-
